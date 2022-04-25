@@ -1,22 +1,25 @@
 ﻿using TMPro;
 using UnityEngine;
 
-public class Balloon : MonoBehaviour
+namespace BalloonGame
 {
-	[SerializeField] private BalloonData _data;
-	[SerializeField] private SpriteRenderer _renderer;
-	[SerializeField] private TMP_Text _textScore;
-	public BalloonData Data => _data;
-
-	public void Setup(BalloonData data)
+	public class Balloon : MonoBehaviour
 	{
-		_data = data;
-		_renderer.sprite = _data.Sprite;
-		_textScore.text = _data.Score.ToString();
-	}
+		[SerializeField] private BalloonData _data;
+		[SerializeField] private SpriteRenderer _renderer;
+		[SerializeField] private TMP_Text _textScore;
+		public BalloonData Data => _data;
 
-	private void OnDestroy()
-	{
-		
+		public void Setup(BalloonData data)
+		{
+			_data = data;
+			_renderer.sprite = _data.Sprite;
+			_textScore.text = _data.Score.ToString();
+		}
+
+		private void OnDestroy()
+		{
+
+		}
 	}
 }

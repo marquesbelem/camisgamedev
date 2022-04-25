@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Heart : MonoBehaviour
+namespace BalloonGame
 {
-	[SerializeField] private GameObject _close;
-	[SerializeField] private Image _image; 
-	
-	public void EnableClose(bool value)
+	public class Heart : MonoBehaviour
 	{
-		_close.SetActive(value);
+		[SerializeField] private GameObject _close;
+		[SerializeField] private Image _image;
 
-		var tempColor = _image.color;
-		tempColor.a = value ? 0.5f : 1f;
-		_image.color = tempColor;
+		public void EnableClose(bool value)
+		{
+			_close.SetActive(value);
+
+			var tempColor = _image.color;
+			tempColor.a = value ? 0.5f : 1f;
+			_image.color = tempColor;
+		}
 	}
 }

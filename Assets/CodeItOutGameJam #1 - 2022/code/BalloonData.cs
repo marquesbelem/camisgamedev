@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "Balloon", menuName = "Camis/BalloonData", order = 1)]
-public class BalloonData : ScriptableObject
+namespace BalloonGame
 {
-	public int Score;
-	public Sprite Sprite;
+	[CreateAssetMenu(fileName = "Balloon", menuName = "Balloon Game/BalloonData")]
+	public class BalloonData : ScriptableObject
+	{
+		public int Score;
+		public Sprite Sprite;
+	}
 }

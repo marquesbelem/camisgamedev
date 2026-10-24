@@ -6,7 +6,7 @@
 
 * **Objetivo do Site:** Plataforma institucional e comercial de conversão para aulas particulares e mentoria técnica especializada em desenvolvimento de software e jogos.
 
-* **Diferencial de Autoridade:** Ministrado por Engenheira de Software e Desenvolvedora de Jogos sênior (8+ anos de experiência, liderança técnica, histórico em produções comerciais e pós-graduação). Posicionamento *premium* focado em engenharia real, pedagogia estruturada e desenvolvimento cognitivo.
+* **Diferencial de Autoridade:** Ministrado por Engenheira de Software e Desenvolvedora de Jogos sênior (8+ anos de experiência, liderança técnica, histórico em produções comerciais e pós-graduação). Posicionamento *premium* focado em engenharia real, pedagogia estruturada e desenvolvimento cognitivo. https://marquesbelem.github.io/info/
 
 * **Modalidades de Atendimento:**
 
@@ -123,10 +123,6 @@ app/
   3. *Módulo 3:* Integração de formulários, botões de ação e dados.
 
   4. *Módulo 4:* Domínio customizado, DNS, SSL e deploy na nuvem (Vercel/GitHub Pages).
-
-### Trilha Alternativa: Godot Engine
-
-* **Foco:** Alunos com notebooks modestos que não suportam Unity com fluidez, mantendo os princípios de lógica e física 2D/3D.
 
 ## 5. Tabela de Preços & Pacotes Comerciais
 

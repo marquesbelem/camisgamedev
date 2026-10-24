@@ -1,0 +1,38 @@
+{
+  "name": "camisgamedev",
+  "version": "1.0.0",
+  "description": "Site Camis GameDev - mentoria e aulas de programação e jogos",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marquesbelem/camisgamedev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/marquesbelem/camisgamedev/issues"
+  },
+  "homepage": "https://github.com/marquesbelem/camisgamedev#readme",
+  "dependencies": {
+    "lucide-react": "^1.61.0",
+    "next": "^16.4.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "postcss": "^8.5.31",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}

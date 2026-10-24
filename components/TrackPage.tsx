@@ -19,7 +19,14 @@ export function trackMetadata(slug: TrackSlug): Metadata {
     title: t.seoTitle,
     description: t.seoDescription,
     alternates: { canonical: url },
-    openGraph: { title: t.seoTitle, description: t.seoDescription, url, type: "website", locale: "pt_BR" },
+    openGraph: {
+      title: t.seoTitle,
+      description: t.seoDescription,
+      url,
+      type: "website",
+      locale: "pt_BR",
+      images: [{ url: "/opengraph-image.png", width: 1200, height: 630 }],
+    },
   };
 }
 

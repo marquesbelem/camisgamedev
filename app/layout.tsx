@@ -30,8 +30,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
+    url: "/",
     siteName: BRAND,
-    images: [{ url: "/brand/profile.jpg", width: 600, height: 600 }],
+    title: "Aulas de Programação e Jogos | Camis GameDev",
+    description:
+      "Aprenda a programar criando jogos: Scratch, Roblox, Unity e sites com IA. Online no Brasil todo e presencial em Caieiras e região.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aulas de Programação e Jogos | Camis GameDev",
+    description:
+      "Aprenda a programar criando jogos: Scratch, Roblox, Unity e sites com IA. Online e presencial em Caieiras e região.",
   },
   robots: { index: true, follow: true },
 };

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MapPin, Monitor, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, BadgePercent, CalendarCheck, MapPin, Monitor, ShieldCheck, Sparkles, Timer } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { TrackIcon } from "@/components/TrackIcon";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -85,6 +85,49 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <section id="sessao-experimental" className="mx-auto mt-24 max-w-6xl scroll-mt-28 px-4">
+        <div className="relative overflow-hidden rounded-[2rem] border border-line bg-surface p-8 md:p-12">
+          <div className="absolute -right-24 -top-24 size-72 rounded-full bg-gradient-to-br from-brand-purple to-brand-yellow opacity-30 blur-3xl" aria-hidden />
+          <div className="relative grid gap-10 md:grid-cols-[1.2fr_1fr]">
+            <div>
+              <p className="inline-flex items-center gap-2 rounded-full border border-line bg-surface-2 px-4 py-1.5 text-sm font-bold text-[var(--accent)]">
+                <Timer size={16} aria-hidden /> 30 minutos
+              </p>
+              <h2 className="font-display mt-4 text-3xl sm:text-4xl">Sessão Prática Experimental</h2>
+              <p className="mt-4 max-w-xl text-muted">
+                Conheça a metodologia na prática antes de se comprometer. Uma aula curta, com projeto de verdade, para você ou seu filho sentir como é aprender a programar criando jogos.
+              </p>
+              <ul className="mt-6 space-y-3">
+                <li className="flex gap-3">
+                  <BadgePercent className="mt-0.5 shrink-0 text-[var(--accent)]" size={20} aria-hidden />
+                  <span>Fechou o pacote mensal após a aula? O valor é <b>100% abatido</b> da primeira mensalidade.</span>
+                </li>
+                <li className="flex gap-3">
+                  <CalendarCheck className="mt-0.5 shrink-0 text-[var(--accent)]" size={20} aria-hidden />
+                  <span>Depois da experiência, escolha entre <b>aulas avulsas</b> ou <b>pacote mensal</b>.</span>
+                </li>
+              </ul>
+            </div>
+            <div className="grid gap-4 self-center sm:grid-cols-2 md:grid-cols-1">
+              <div className="rounded-3xl border border-line bg-surface-2 p-6">
+                <p className="flex items-center gap-2 text-sm font-bold text-[var(--accent)]"><Monitor size={16} aria-hidden /> Online</p>
+                <p className="font-display mt-2 text-4xl">R$ 35</p>
+              </div>
+              <div className="rounded-3xl border border-line bg-surface-2 p-6">
+                <p className="flex items-center gap-2 text-sm font-bold text-[var(--accent)]"><MapPin size={16} aria-hidden /> Presencial</p>
+                <p className="font-display mt-2 text-4xl">R$ 50</p>
+              </div>
+            </div>
+          </div>
+          <div className="relative mt-8 flex flex-wrap items-center gap-4">
+            <WhatsAppButton id="experimental-whatsapp" text="Olá! Gostaria de agendar uma Sessão Prática Experimental de 30 minutos" label="Agendar sessão experimental" />
+            <Link href="/precos" className="inline-flex items-center gap-2 font-bold text-[var(--accent)]">
+              Ver todos os preços <ArrowRight size={18} aria-hidden />
+            </Link>
+          </div>
+        </div>
       </section>
 
       <section className="mx-auto mt-24 grid max-w-6xl items-center gap-10 px-4 md:grid-cols-2">

@@ -6,7 +6,7 @@
 
 * **Objetivo do Site:** Plataforma institucional e comercial de conversão para aulas particulares e mentoria técnica especializada em desenvolvimento de software e jogos.
 
-* **Diferencial de Autoridade:** Ministrado por Engenheira de Software e Desenvolvedora de Jogos sênior (8+ anos de experiência, liderança técnica, histórico em produções comerciais e pós-graduação). Posicionamento *premium* focado em engenharia real, pedagogia estruturada e desenvolvimento cognitivo. https://marquesbelem.github.io/info/
+* **Diferencial de Autoridade:** Ministrado por Engenheira de Software e Desenvolvedora de Jogos sênior (8+ anos de experiência, liderança técnica, histórico em produções comerciais e pós-graduação). Posicionamento *premium* focado em engenharia real, pedagogia estruturada e desenvolvimento cognitivo. https://cmbelem.vercel.app
 
 * **Modalidades de Atendimento:**
 

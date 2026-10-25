@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Award, GraduationCap, Gamepad2, Users } from "lucide-react";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { PERSONAL_SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Sobre a Mentora | Engenheira de Software e Game Developer",
@@ -39,7 +40,7 @@ export default function Sobre() {
             Minhas aulas unem engenharia real, pedagogia estruturada e desenvolvimento cognitivo: do primeiro bloco do ScratchJr à arquitetura de um jogo em Unity.
           </p>
           <a
-            href="https://marquesbelem.github.io/info/"
+            href={PERSONAL_SITE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-block font-bold text-[var(--accent)] underline underline-offset-4"

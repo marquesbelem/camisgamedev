@@ -7,6 +7,7 @@ export const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP ?? "551199999999
 
 export const BRAND = "Camis GameDev";
 export const MENTOR_NAME = "Camis Marques Belem";
+export const PERSONAL_SITE_URL = "https://cmbelem.vercel.app";
 export const REGION = ["Caieiras", "Franco da Rocha", "Mairiporã"];
 
 export function whatsappLink(text: string) {

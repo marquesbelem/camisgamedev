@@ -4,7 +4,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import { BRAND, MENTOR_NAME, REGION, SITE_URL } from "@/lib/site";
+import { BRAND, MENTOR_NAME, PERSONAL_SITE_URL, REGION, SITE_URL } from "@/lib/site";
 
 const bungee = localFont({
   src: "./fonts/Bungee-Regular.ttf",
@@ -61,6 +61,8 @@ const jsonLd = {
       "@type": "Person",
       "@id": `${SITE_URL}/#mentor`,
       name: MENTOR_NAME,
+      url: PERSONAL_SITE_URL,
+      sameAs: [PERSONAL_SITE_URL],
       jobTitle: "Engenheira de Software & Game Developer Senior",
       description:
         "Mais de 8 anos de experiência em engenharia de software e produção de jogos comerciais.",

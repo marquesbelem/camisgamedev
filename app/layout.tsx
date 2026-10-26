@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { BRAND, MENTOR_NAME, PERSONAL_SITE_URL, REGION, SITE_URL } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const bungee = localFont({
   src: "./fonts/Bungee-Regular.ttf",
@@ -99,6 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="conteudo">{children}</main>
         <Footer />
         <JsonLd data={jsonLd} />
+        <Analytics />
       </body>
     </html>
   );

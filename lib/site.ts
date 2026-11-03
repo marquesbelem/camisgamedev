@@ -195,6 +195,19 @@ export const TRACKS: Track[] = [
   },
 ];
 
+export interface Feedback {
+  name: string;
+  review: string;
+}
+
+/** Adicione novos feedbacks aqui. A seção só aparece na home quando houver itens. */
+export const FEEDBACKS: Feedback[] = [
+  { name: "Alan", review: "Tive a oportunidade de conhecer Camila como aluna no curso de Jogos Digitais da Faculdade Impacta, tendo demonstrado grande comprometimento com o curso. Com a conclusão de seu curso, Camila tem se dedicado bastante em seu desenvolvimento pessoal e profissional, construindo uma bela trajetória na indústria brasileira de jogos digitais." },
+  { name: "Clara", review: "Camila é uma profissional dedicada, organizada e responsável, além de possuir uma ótima visão de projeto e um domínio técnico exemplar. Como liderança é uma pessoa empática, comunicativa e articula bem a comunicação com as diferentes àreas do projeto. Ela confia em sua equipe e dá o suporte necessário para que tarefas de alta complexidade sejam feitas por outros desenvolvedores, demonstrando uma ótima habilidade de delegação de tarefas e visão para desenvolver bem as pessoas a sua volta. Recomendo fortemente Camila como profissional e liderança para equipes de engenharia de alta performance." },
+  { name: "Kleber", review: "Camila é uma pessoa extraordinária, muito fácil de se conviver. É uma profissional muito competente, focada e comprometida. Sempre atenta aos prazos, e principalmente com a qualidade em suas entregas." },
+  { name: "Felipe", review: "A Camila é uma das pessoas mais organizadas e dedicadas que conheço. Sempre preza pela qualidade e o prazo dos trabalhos, fazendo o necessário e além para ter um trabalho que lhe traga orgulho no final. É esforçada em aprender e não se importa em pedir ajuda quando necessário. Enfim, a melhor pessoa que tive o prazer de estudar e fazer projetos junto." },
+];
+
 export const PRICES = [
   {
     track: "Alfabetização Digital & Scratch",

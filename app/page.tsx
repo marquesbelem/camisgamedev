@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BadgePercent, CalendarCheck, MapPin, Monitor, ShieldCheck, Sparkles, Timer } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+import { FeedbackCarousel } from "@/components/FeedbackCarousel";
 import { TrackIcon } from "@/components/TrackIcon";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { TRACKS } from "@/lib/site";
+import { FEEDBACKS, TRACKS } from "@/lib/site";
 
 export default function Home() {
   return (
@@ -68,9 +69,8 @@ export default function Home() {
                 className="card-hover flex h-full flex-col rounded-3xl border border-line bg-surface p-6"
               >
                 <span
-                  className={`grid size-14 place-items-center rounded-2xl ${
-                    t.accent === "yellow" ? "bg-brand-yellow text-[#17102e]" : "bg-brand-purple text-white"
-                  }`}
+                  className={`grid size-14 place-items-center rounded-2xl ${t.accent === "yellow" ? "bg-brand-yellow text-[#17102e]" : "bg-brand-purple text-white"
+                    }`}
                 >
                   <TrackIcon icon={t.icon} />
                 </span>
@@ -164,6 +164,14 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {FEEDBACKS.length > 0 && (
+        <section id="feedbacks" className="mx-auto mt-24 max-w-6xl scroll-mt-28 px-4">
+          <h2 className="font-display text-3xl sm:text-4xl">Recomendações</h2>
+          <p className="mt-3 max-w-2xl text-muted">O que as pessoas dizem sobre a Camis.</p>
+          <FeedbackCarousel items={FEEDBACKS} />
+        </section>
+      )}
 
       <section id="contato" className="mx-auto mt-24 max-w-3xl scroll-mt-28 px-4">
         <h2 className="font-display text-center text-3xl sm:text-4xl">Vamos conversar?</h2>

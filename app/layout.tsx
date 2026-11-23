@@ -4,6 +4,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
+import { LanguageProvider } from "@/components/LanguageProvider";
 import { BRAND, MENTOR_NAME, PERSONAL_SITE_URL, REGION, SITE_URL } from "@/lib/site";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -96,9 +97,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Ir para o conteúdo
         </a>
-        <Header />
-        <main id="conteudo">{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main id="conteudo">{children}</main>
+          <Footer />
+        </LanguageProvider>
         <JsonLd data={jsonLd} />
         <Analytics />
       </body>

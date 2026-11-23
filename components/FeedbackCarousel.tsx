@@ -2,10 +2,14 @@
 
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { useLanguage } from "./LanguageProvider";
+import { TRANSLATIONS } from "@/lib/i18n";
 import type { Feedback } from "@/lib/site";
 
 export function FeedbackCarousel({ items }: { items: Feedback[] }) {
   const ref = useRef<HTMLUListElement>(null);
+  const { locale } = useLanguage();
+  const f = TRANSLATIONS[locale].feedback;
 
   const scroll = (dir: 1 | -1) => {
     const el = ref.current;
@@ -34,10 +38,10 @@ export function FeedbackCarousel({ items }: { items: Feedback[] }) {
         ))}
       </ul>
       <div className="mt-4 flex justify-end gap-3">
-        <button type="button" onClick={() => scroll(-1)} className={btn} aria-label="Feedback anterior">
+        <button type="button" onClick={() => scroll(-1)} className={btn} aria-label={f.prev}>
           <ChevronLeft size={20} aria-hidden />
         </button>
-        <button type="button" onClick={() => scroll(1)} className={btn} aria-label="Próximo feedback">
+        <button type="button" onClick={() => scroll(1)} className={btn} aria-label={f.next}>
           <ChevronRight size={20} aria-hidden />
         </button>
       </div>
